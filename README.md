@@ -14,5 +14,5 @@ To access the code kindly download the dentalreport.py file and run using the co
 
 ## WORKFLOW :
 When you run the code, you will be able to access the following :
-(.//Users/maanyaupadhyaya/Desktop.pic1.png)
+(./Users/maanyaupadhyaya/Desktop.pic1.png)
 
