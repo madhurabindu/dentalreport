@@ -9,9 +9,10 @@ NOTE : MacOS users : It is not a convenient software for MacOS, you can still gi
 
 Before starting with the project ,please click this link to download all the necessary python modules in the project
 PACKAGE:👉🏻
-# CODE: 
+### CODE: 
 To access the code kindly download the dentalreport.py file and run using the command : python dentalreport.py
 
-
-
+## WORKFLOW :
+When you run the code, you will be able to access the following :
+(.//Users/maanyaupadhyaya/Desktop.pic1.png)
 
