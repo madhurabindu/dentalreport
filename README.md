@@ -45,7 +45,8 @@ Step 3: An AI automation for canal tracking.
 Lets look into the workflow in detail
 
 Step 1: When we run the python file, an UI opens like this
-<ui>
+
+<img src="./ui1.png" alt="Image" height="500" width = "600">
 
 Step 2: User is requested to chose the patient folder from a file dialog 
 
@@ -55,7 +56,7 @@ A confirmation is asked for the patient's name and details within the same form.
 
 Step 3: Using the picture as the reference, choose the region of interest.
 
-<ui>
+<img src="./ui2.png" alt="Image" height="500" width = "600">
 
 Step 4: When your region of interst is confirmed let’s move towards the final strep of generating a pre-filled report.
 Click on Generate Report button and the report generated will be in .docx format, editable further by the technicians/doctor.
