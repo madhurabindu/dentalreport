@@ -35,9 +35,9 @@ Step 3: An AI automation for canal tracking.
 *  A new pre filled report will be generated and saved in the respective patient's file.
 
 ## Installation Details: 
-1. python installation
+1. python installation 
 
-2. 
+2. packages required for the project to run
 
 3. run python dentalreport.py
 
