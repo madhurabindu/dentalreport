@@ -61,7 +61,7 @@ Step 3: Using the picture as the reference, choose the region of interest.
 Step 4: When your region of interst is confirmed let’s move towards the final strep of generating a pre-filled report.
 Click on Generate Report button and the report generated will be in .docx format, editable further by the technicians/doctor.
 
-<ui>
+<img src="./ui3.png" alt="Image" height="500" width = "600">
 
 Step 5: Once the report is generated you can return to the home page via the home button or close the UI.
 
