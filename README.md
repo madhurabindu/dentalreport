@@ -9,14 +9,9 @@ NOTE : MacOS users : It is not a convenient software for MacOS, you can still gi
 ## Purpose of the project:
 The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formed are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
 ## METHOD:
-* Since this is a UI based based project, you might be able to see just the front part, hence here's a little description on how the project works.
- Name     | Age | Occupation     |
-|---------|-----|----------------|
-| John    | 30  | Engineer       |
-| Alice   | 25  | Designer       |
-| Michael | 40  | Developer      |
-
-
+ Since this is a UI based project, you might be able to see just the front part, hence here's a little description on how the project works.
+  * The xml file is parsed, the dicom files are read. The necessary information is collected from these files, the slices obtained are to be windowed and put dimensions on.
+  * Then the processed information and the images from scanning are templetised and put in the docx file. The docx file is still on edit mode, for further adddition of content if required.
 
 ## CODE: 
 Before starting with the project ,please click this link to download all the necessary python modules in the project
