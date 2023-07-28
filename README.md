@@ -10,7 +10,7 @@ NOTE : MacOS users : It is not a convenient software for MacOS, you can still gi
 The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formed are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
 ## METHOD:
 * Since this is a UI based based project, you might be able to see just the front part, hence here's a little description on how the project works.
- Name    | Age | Occupation   |
+ Name     | Age | Occupation     |
 |---------|-----|----------------|
 | John    | 30  | Engineer       |
 | Alice   | 25  | Designer       |
