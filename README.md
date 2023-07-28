@@ -15,7 +15,7 @@ To access the code kindly download the dentalreport.py file and run using the co
 ## WORKFLOW :
 When you run the code, you will be able to access the following :
 
-![Here is a picture of the workflow](./pic1.png)
+![Here is a picture of the workflow](./pic2.png)
 
 Lets look into the workflow in detail
 * When we run the python file, an UI opens , which will ask for a patient's file to selected. The dialog will appear like this:
