@@ -12,7 +12,7 @@ PACKAGE:👉🏻
 ### CODE: 
 To access the code kindly download the dentalreport.py file and run using the command : python dentalreport.py
 
-## WORKFLOW :
+## FLOWCHART :
 When you run the code, you will be able to access the following :
 
 ![Here is a picture of the workflow](./pic2.png)
@@ -20,9 +20,10 @@ When you run the code, you will be able to access the following :
 Lets look into the workflow in detail
 * When we run the python file, an UI opens , which will ask for a patient's file to selected. The dialog will appear like this:
   ![file dialog](./pic3.png)
-  
-  
 
+* Once you select the file it will ask for the region.Region is basically the area of intrest for the dentist to look and work on.Each teeth has been given a standard number called the FDI number, and with respect to the size of the teeth they are cut into different slices by the CBCT scanner. This is a very important aspect for the report generation as well.
+* 
+  
 
 
 
