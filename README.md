@@ -31,7 +31,7 @@ Lets look into the workflow in detail
 ## FLOWCHART :
 When you run the code, you will be able to access the following :
 
-<img src="./pic2.png" alt="Image" height="600" width = "600">
+<img src="./pic2.png" alt="Image" height="500" width = "500">
 
 
 
