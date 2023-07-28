@@ -7,14 +7,23 @@ For downloading the software please visit :👉🏻https://www.carestreamdental.
 
 NOTE : MacOS users : It is not a convenient software for MacOS, you can still give it a try.
 ## Purpose of the project:
-The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formes are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
+The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formed are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
+## METHOD:
+* Since this is a UI based based project, you might be able to see just the front part, hence here's a little description on how the project works.
+ Name    | Age | Occupation   |
+|---------|-----|----------------|
+| John    | 30  | Engineer       |
+| Alice   | 25  | Designer       |
+| Michael | 40  | Developer      |
 
 
-### CODE: 
+
+## CODE: 
 Before starting with the project ,please click this link to download all the necessary python modules in the project
 PACKAGE:👉🏻
 
 To access the code kindly download the dentalreport.py file and run using the command : python dentalreport.py
+
 Lets look into the workflow in detail
 * When we run the python file, an UI opens , which will ask for a patient's file to selected. The dialog will appear like this:
   ![file dialog](./pic3.png)
