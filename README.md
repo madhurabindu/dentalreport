@@ -11,6 +11,7 @@ The project aims to perform an automation for the report generation as to try an
 
 ## PURPOSE:
 The entries in a typical dental report has the following:
+
 * Patient related information
 * Details of the study performed
 * Analysis of the problem by the technician/doctor
@@ -19,6 +20,7 @@ It would be more efficient for the doctors if filling of these details are autom
 
 ## APPROACH:
 The automation will be handled in the steps given below:
+
 Step 1: Automate filling of patient and study related information through console based software
 Step 2: Convert the above to a UI based software.
 Step 3: An AI automation for canal tracking.
