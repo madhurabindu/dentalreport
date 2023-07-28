@@ -6,6 +6,8 @@ CareStream 3D is a 3D imaging software used by dentists to find the anomaly in t
 For downloading the software please visit :👉🏻https://www.carestreamdental.com/en-in/csd-products/software/imaging-software/cs-3d-imaging-software/
 
 NOTE : MacOS users : It is not a convenient software for MacOS, you can still give it a try.
+## Purpose of the project:
+The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formes are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
 
 Before starting with the project ,please click this link to download all the necessary python modules in the project
 PACKAGE:👉🏻
@@ -24,6 +26,8 @@ Lets look into the workflow in detail
 When you run the code, you will be able to access the following :
 
 ![Here is a picture of the workflow](./pic2.png)
+
+
 
 
 
