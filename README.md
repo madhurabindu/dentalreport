@@ -9,11 +9,12 @@ NOTE : MacOS users : It is not a convenient software for MacOS, you can still gi
 ## Purpose of the project:
 The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formes are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
 
+
+### CODE: 
 Before starting with the project ,please click this link to download all the necessary python modules in the project
 PACKAGE:👉🏻
-### CODE: 
-To access the code kindly download the dentalreport.py file and run using the command : python dentalreport.py
 
+To access the code kindly download the dentalreport.py file and run using the command : python dentalreport.py
 Lets look into the workflow in detail
 * When we run the python file, an UI opens , which will ask for a patient's file to selected. The dialog will appear like this:
   ![file dialog](./pic3.png)
