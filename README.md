@@ -43,6 +43,7 @@ Step 3: An AI automation for canal tracking.
 
 ## UI Mock:
 Lets look into the workflow in detail
+
 Step 1: When we run the python file, an UI opens like this
 <ui>
 
