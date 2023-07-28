@@ -39,7 +39,15 @@ Step 3: An AI automation for canal tracking.
 
 2. packages required for the project to run
 
-3. run python dentalreport.py
+| Modules     | Commands for installation                  |
+|----------   |--------------------------------------------|
+| pydicom     | pip install pydicom                        |
+| openCV      | pip install opencv-python                  |
+| numpy       | pip install numpy                          |
+| Pillow      | pip install pillow                         |
+| Docxtypl    | pip install docxtpl                        |
+
+3. Run python dentalreport.py
 
 ## UI Mock:
 Lets look into the workflow in detail
