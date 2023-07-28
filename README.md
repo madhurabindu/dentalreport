@@ -20,6 +20,7 @@ When you run the code, you will be able to access the following :
 Lets look into the workflow in detail
 * When we run the python file, an UI opens , which will ask for a patient's file to selected. The dialog will appear like this:
   
+  
 
 
 
