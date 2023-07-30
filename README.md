@@ -66,11 +66,11 @@ Step 3: An AI automation for canal tracking.
 
 In the console based version of the software, the user shall interact via the console of the IDE they choose to run the code on. 
 
-Step 1: When the command python dentalreport.py is executed the following shall appear on the console. The user chooses 'yes' or 'no'. On choosing 'no' the access shall be denied for the further part.
+Step 1: When the command python dentalreport.py is executed the following shall appear on the console. The user chooses 'yes' or 'no'. On choosing 'no' the access shall be denied for the further part.The user is asked to enter the patient's name, after which a file dialog shall open for choosing the patient's file.
 
 <img>
 
-Step 2: The user is asked to enter the patient's name, after which a file dialog shall open for choosing the patient's file.
+Step 2: The user is asked to confirm the patient id. Once the confirmation is recieved we shall move forward.
 
 <img>
 
