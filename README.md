@@ -11,14 +11,15 @@ The project aims to perform an automation for the report generation as to try an
 
 ## Table of Contents
 
-| Index | Content         |
-|-------|-----------------|
-| 1     | Purpose         |
-| 2     | Approach        |
-| 3     | Workflow        |
-| 4     | Console-based   |
-| 5     | UI-Mock         |
-| 6     | Flowchart       |
+| Index | Content             |
+|-------|---------------------|
+| 1     | Purpose             |
+| 2     | Approach            |
+| 3     | Workflow            |
+| 4     | Installation Details|
+| 5     | Console-based       |
+| 6     | UI-Mock             |
+| 7     | Flowchart           |
 
 
 ## PURPOSE:
