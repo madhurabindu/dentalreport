@@ -9,6 +9,17 @@ NOTE : This software is not supported under MacOS
 
 The project aims to perform an automation for the report generation as to try and reduce human intervention. Once the scan is done the images formed are to be processed, marked, dimensionalized and correctly  mapped to be put in the report. This part used to require a human assistance, but with the project in hand it becomes very east and error-free.
 
+## Table of Contents
+
+| Content       | Links                                                                         |
+|----------     |-------------------------------------------------------------------------------|
+| Approach      | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#approach  |
+| Console-based |                                                                               |
+| UI Mock       | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#ui-mock   |
+| Workflow      | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#workflow  |
+| Flowchart     | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#flowchart-|
+
+
 ## PURPOSE:
 The entries in a typical dental report has the following:
 
