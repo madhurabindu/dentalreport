@@ -62,6 +62,26 @@ Step 3: An AI automation for canal tracking.
 
 3. Run python dentalreport.py
 
+## Console-based Workflow:
+
+In the console based version of the software, the user shall interact via the console of the IDE they choose to run the code on. 
+
+Step 1: When the command python dentalreport.py is executed the following shall appear on the console. The user chooses 'yes' or 'no'. On choosing 'no' the access shall be denied for the further part.
+
+<img>
+
+Step 2: The user is asked to enter the patient's name, after which a file dialog shall open for choosing the patient's file.
+
+<img>
+
+Step 3: The user is asked to enter the Region of Intrest, a pop up window with the standard FDI teeth numbering shall appear for reference.
+
+<img>
+
+Step 4: The user is asked if he/she wants to generate a pre filled report. On chooding 'yes' a report shall be generated and saved in docx format in the same folder under the patient's name along with date and time.
+
+<img>
+
 ## UI Mock:
 Lets look into the workflow in detail
 
