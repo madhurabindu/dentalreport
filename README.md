@@ -11,13 +11,14 @@ The project aims to perform an automation for the report generation as to try an
 
 ## Table of Contents
 
-| Content       | Links                                                                         |
-|----------     |-------------------------------------------------------------------------------|
-| Approach      | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#approach  |
-| Console-based |                                                                               |
-| UI Mock       | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#ui-mock   |
-| Workflow      | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#workflow  |
-| Flowchart     | https://github.com/MaanyaUpadhyaya/dentalreport/edit/main/README.md#flowchart-|
+| Index | Content         |
+|-------|-----------------|
+| 1     | Purpose         |
+| 2     | Approach        |
+| 3     | Workflow        |
+| 4     | Console-based   |
+| 5     | UI-Mock         |
+| 6     | Flowchart       |
 
 
 ## PURPOSE:
