@@ -11,15 +11,15 @@ The project aims to perform an automation for the report generation as to try an
 
 ## Table of Contents
 
-| Index | Content             |
-|-------|---------------------|
-| 1     | [Purpose](#purpose) |
-| 2     | [Approach](#approach)|
-| 3     | Workflow            |
-| 4     | Installation Details|
-| 5     | Console-based       |
-| 6     | UI-Mock             |
-| 7     | Flowchart           |
+| Index | Content                |
+|-------|---------------------   |
+| 1     | [Purpose](#purpose)    |
+| 2     | [Approach](#approach)  |
+| 3     | [Workflow](#workflow)  |
+| 4     | [Installation](#installation)|
+| 5     | [Console-based](#console)|
+| 6     | [UI-Mock](#ui)           |
+| 7     | [Flowchart](#flowchart)  |  
 
 
 ## PURPOSE:
@@ -47,12 +47,18 @@ Step 2: Convert the above to a UI based software.
 Step 3: An AI automation for canal tracking.
 
 ## Workflow:
+
+<a name="workflow"></a>
+
 *  User selects a patient name as thier folder.
 *  User selects a region
 *  Chooses to generate report
 *  A new pre filled report will be generated and saved in the respective patient's file.
 
 ## Installation Details: 
+
+<a name="installation"></a>
+
 1. python installation 
 
 2. packages required for the project to run
@@ -68,6 +74,8 @@ Step 3: An AI automation for canal tracking.
 3. Run python dentalreport.py
 
 ## Console-based Workflow:
+
+<a name="console"></a>
 
 In the console based version of the software, the user shall interact via the console of the IDE they choose to run the code on. 
 
@@ -88,6 +96,9 @@ Step 4: The user is asked if he/she wants to generate a pre filled report. On ch
 <img src="./cb4.png" alt="Image" height="300" width = "700">
 
 ## UI Mock:
+
+<a name="ui"></a>
+
 Lets look into the workflow in detail
 
 Step 1: When we run the python file, an UI opens like this
@@ -112,6 +123,9 @@ Click on Generate Report button and the report generated will be in .docx format
 Step 5: Once the report is generated you can return to the home page via the home button or close the UI.
 
 ## FLOWCHART :
+
+<a name="flowchart"></a>
+
 The final pictorial view of the steps for the generation of the pre-filled report is as follows:
 
 <img src="./pic2.png" alt="Image" height="400" width = "400">
