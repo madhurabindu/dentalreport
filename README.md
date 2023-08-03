@@ -13,8 +13,8 @@ The project aims to perform an automation for the report generation as to try an
 
 | Index | Content             |
 |-------|---------------------|
-| 1     | Purpose             |
-| 2     | Approach            |
+| 1     | [Purpose](#purpose) |
+| 2     | [Approach](#approach)|
 | 3     | Workflow            |
 | 4     | Installation Details|
 | 5     | Console-based       |
@@ -23,6 +23,9 @@ The project aims to perform an automation for the report generation as to try an
 
 
 ## PURPOSE:
+
+<a name="purpose"></a>
+
 The entries in a typical dental report has the following:
 
 * Patient related information
@@ -33,6 +36,8 @@ The entries in a typical dental report has the following:
 It would be more efficient for the doctors if filling of these details are automated.
 
 ## APPROACH:
+
+<a name="approach"></a>
 The automation will be handled in the steps given below:
 
 Step 1: Automate filling of patient and study related information through console based software
