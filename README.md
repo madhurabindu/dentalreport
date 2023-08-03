@@ -81,7 +81,7 @@ In the console based version of the software, the user shall interact via the co
 
 Step 1: When the command python dentalreport.py is executed the following shall appear on the console. The user chooses 'yes' or 'no'. On choosing 'no' the access shall be denied for the further part.The user is asked to enter the patient's name, after which a file dialog shall open for choosing the patient's file.
 
-<img src="./cb1.png" alt="Image" height="300" width = "700">
+<img src="./cb1.png" alt="Image" width = "700">
 
 Step 2: The user is asked to confirm the patient id. Once the confirmation is recieved we shall move forward.
 
