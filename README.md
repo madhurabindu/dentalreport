@@ -85,15 +85,15 @@ Step 1: When the command python dentalreport.py is executed the following shall 
 
 Step 2: The user is asked to confirm the patient id. Once the confirmation is recieved we shall move forward.
 
-<img src="./cb2.png" alt="Image" height="300" width = "700">
+<img src="./cb2.png" alt="Image" width = "700">
 
 Step 3: The user is asked to enter the Region of Intrest, a pop up window with the standard FDI teeth numbering shall appear for reference.
 
-<img src="./cb3.png" alt="Image" height="300" width = "700">
+<img src="./cb3.png" alt="Image" width = "700">
 
 Step 4: The user is asked if he/she wants to generate a pre filled report. On chooding 'yes' a report shall be generated and saved in docx format in the same folder under the patient's name along with date and time.
 
-<img src="./cb4.png" alt="Image" height="300" width = "700">
+<img src="./cb4.png" alt="Image" width = "700">
 
 ## UI Mock:
 
