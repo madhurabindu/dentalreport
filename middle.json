@@ -1,0 +1,12 @@
+{
+  "content": [
+    {
+      "name": "PatientName",
+      "tag": "0x00100010"
+    },
+    {
+      "name": "KVP",
+      "tag": "0x00180060"
+    }
+  ]
+}
