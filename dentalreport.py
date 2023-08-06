@@ -39,7 +39,6 @@ def get_dicom_file(folder_path):
 
 
 def read_dcm_attributes(dcm_file, attribute_tags):
-    print("Debug: DICOM file path:", dcm_file)
     ds = pydicom.dcmread(dcm_file)
     attributes = {}
     for param in attribute_tags:
@@ -187,21 +186,19 @@ if generate_report == 'yes':
 
     image.save("result.jpg")
 
-
     current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     attributes['RegionNumber'] = region_number
     attributes['RegionName'] = region_name
     attributes['date_now'] = current_datetime
-   
-   
-    to_fill_in = {'img1': 'result.jpg', 'img2': 'result.jpg'}
     template = DocxTemplate(template_file)
+
+
+    to_fill_in = {'img1': 'result.jpg', 'img2': 'result.jpg'}
     context = {}
     for key, value in to_fill_in.items():
         image = InlineImage(template, value)
-        context[key] = image
-    template.render(context)  # Render images into the template
-
+        attributes[key] = image
+    template.render(attributes) 
     
     report_filename = f"{patient_name}_{current_datetime}.docx"
     report_filepath = os.path.join(selected_folder, report_filename)
