@@ -14,14 +14,12 @@ def select_patient_folder():
     while True:
         want_to_enter_name = input("Select a patient folder? (yes/no): ").lower()
         if want_to_enter_name == 'no':
-            print("Patient folder not selected,process terminating!!")
+            print("Patient folder not selected, process terminated!!")
             exit()
         else:
-            patient_name = input("Enter the patient name: ")
-            print("Patient name:", patient_name)
             selected_folder = open_folder_explorer()
-            print("Selected patient path:", selected_folder)
-            return patient_name, selected_folder
+            print("Select Patient Folder:", selected_folder)
+            return selected_folder
 
 def open_folder_explorer():
     root = tk.Tk()
@@ -116,21 +114,22 @@ def apply_window(pixel_array, window_center, window_width):
     return pixel_array
 
 while True:
-    patient_name, selected_folder = select_patient_folder()
+    selected_folder = select_patient_folder()
     patient_id = get_patient_id_from_folder(selected_folder)
     if patient_id != 'Null':
-        print("Patient ID from DICOM file in the folder:", patient_id)
+        print("Selected Patient's ID:", patient_id)
         break
     else:
-        print("Patient ID not applicable. Please select a different patient folder.")
+        print("Patient ID not found. Please select a different patient folder.")
 
 confirm = input("Do you confirm this patient ID? (yes/no): ").lower()
-if confirm != 'yes':
+if confirm == 'no':
     print("Confirmation denied. Exiting...")
     exit()
 
+print("Please enter following details:")
 while True:
-    region_number = input("Enter the region number: ")
+    region_number = input("\nRegion number: ")
     if validate_region_number(region_number):
         break
     else:
@@ -140,70 +139,71 @@ while True:
         img.show()
 
 quadrant, region_name = get_quadrant_and_region(region_number)
-print("The selected tooth is in the:")
+print("The selected tooth is in the ")
 print(f"Quadrant: {quadrant}")
 print(f"Region Name: {region_name}")
 
 generate_report = input("Do you want to generate a pre-filled report? (yes/no): ").lower()
-if generate_report == 'yes':
-    
-    dcm_file = get_dicom_file(selected_folder)
-    json_file = 'middle.json'  
-    template_file = 'dental_Report_template.docx'  
-    
-    with open(json_file) as f:
-        json_data = json.load(f)
-    
-    attribute_tags = json_data['content']
-    attributes = read_dcm_attributes(dcm_file, attribute_tags)
-
-    ds = pydicom.read_file(dcm_file)
-    window_center = ds.WindowCenter
-    window_width = ds.WindowWidth
-
-    pixel_array = ds.pixel_array
-    windowed_pixel_array = apply_window(pixel_array, window_center, window_width)
-
-    windowed_pixel_array = (windowed_pixel_array * 255).astype(np.uint8)
-    cv2.imwrite("windowed_image.jpg", windowed_pixel_array)
-    image = Image.open("windowed_image.jpg")
-    image = image.convert('RGB')
-    image = draw_line(image, (100,200), (200,300))
-
-    rows = ds.Rows
-    columns = ds.Columns
-
-    point1 = (rows // 2, 0)
-    point2 = (0, columns // 2)
-    point3 = (rows // 2, columns)
-    point4 = (rows, columns // 2)
-
-    image = add_text(image, (200,300), "200mm")
-    image = add_text(image, (169,0), "H")
-    image = add_text(image, (0,169), "R")
-    image = add_text(image, (169,330), "F")
-    image = add_text(image, (330,169), "L")
-
-    image.save("result.jpg")
-
-    current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    attributes['RegionNumber'] = region_number
-    attributes['RegionName'] = region_name
-    attributes['date_now'] = current_datetime
-    template = DocxTemplate(template_file)
-
-
-    to_fill_in = {'img1': 'result.jpg', 'img2': 'result.jpg'}
-    context = {}
-    for key, value in to_fill_in.items():
-        image = InlineImage(template, value)
-        attributes[key] = image
-    template.render(attributes) 
-    
-    report_filename = f"{patient_name}_{current_datetime}.docx"
-    report_filepath = os.path.join(selected_folder, report_filename)
-    template.save(report_filepath)
-    print("Report generated and saved as:", report_filepath)
-    print("Successfully generated report! Thank you.")
-else:
+if generate_report == 'no':
     print("No report will be generated. Thank you.")
+    exit()
+
+dcm_file = get_dicom_file(selected_folder)
+json_file = 'middle.json'  
+template_file = 'dental_Report_template.docx'  
+
+with open(json_file) as f:
+    json_data = json.load(f)
+
+attribute_tags = json_data['content']
+attributes = read_dcm_attributes(dcm_file, attribute_tags)
+
+ds = pydicom.read_file(dcm_file)
+window_center = ds.WindowCenter
+window_width = ds.WindowWidth
+
+pixel_array = ds.pixel_array
+windowed_pixel_array = apply_window(pixel_array, window_center, window_width)
+
+windowed_pixel_array = (windowed_pixel_array * 255).astype(np.uint8)
+cv2.imwrite("windowed_image.jpg", windowed_pixel_array)
+image = Image.open("windowed_image.jpg")
+image = image.convert('RGB')
+image = draw_line(image, (100,200), (200,300))
+
+rows = ds.Rows
+columns = ds.Columns
+
+point1 = (rows // 2, 0)
+point2 = (0, columns // 2)
+point3 = (rows // 2, columns)
+point4 = (rows, columns // 2)
+
+image = add_text(image, (200,300), "200mm")
+image = add_text(image, (169,0), "H")
+image = add_text(image, (0,169), "R")
+image = add_text(image, (169,330), "F")
+image = add_text(image, (330,169), "L")
+
+image.save("result.jpg")
+
+current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+date_file = datetime.now().strftime("%Y-%m-%d")
+attributes['RegionNumber'] = region_number
+attributes['RegionName'] = region_name
+attributes['date_now'] = date_file
+
+template = DocxTemplate(template_file)
+to_fill_in = {'img1': 'result.jpg', 'img2': 'result.jpg'}
+context = {}
+for key, value in to_fill_in.items():
+    image = InlineImage(template, value)
+    attributes[key] = image
+template.render(attributes) 
+
+patient_name = input("Report name (patient name): ")
+
+report_filename = f"{patient_name}_{current_datetime}.docx"
+report_filepath = os.path.join(selected_folder, report_filename)
+template.save(report_filepath)
+print("Successfully generated report Report generated and saved as:", report_filepath)
